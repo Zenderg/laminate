@@ -1,0 +1,70 @@
+@import "../colors";
+
+.news{
+  margin-top: 100px;
+  padding: 0 80px;
+  margin-bottom: 80px;
+  .news__title{
+    text-transform: uppercase;
+    color: $brown;
+    font-family: Oswald-medium;
+    font-size: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .news__grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+    .news__item{
+      .news__item__img{
+        width: 100%;
+        height: 254px;
+        object-fit: cover;
+      }
+      .news__item__description{
+        .news__item__title{
+          font-size: 20px;
+          margin-bottom: 7px;
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
+        .news__item__text{
+          font-family: Open-sans-light;
+          font-size: 15px;
+          color: $secondText;
+        }
+      }
+    }
+  }
+  .news__more{
+    text-align: center;
+    margin-top: 50px;
+    a{
+      padding: 15px 60px;
+      text-decoration: none;
+      border: 1px solid $brown;
+      color: $brown;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .news{
+    padding: 0 30px;
+    .news__grid{
+      grid-gap: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .news{
+    padding: 0 15px;
+    .news__grid{
+      grid-gap: 10px;
+    }
+  }
+}

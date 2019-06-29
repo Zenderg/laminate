@@ -1,0 +1,79 @@
+@import "../colors";
+
+.materials{
+  margin-top: 72px;
+  margin-bottom: 65px;
+  .materials__title{
+    font-size: 35px;
+    font-family: Oswald-medium;
+    color:$brown;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .materials__sub-title{
+    font-family: Open-sans-light;
+    font-size: 15px;
+    color: $black;
+    text-align: center;
+  }
+  .materials__grid{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    padding: 0 80px;
+    grid-gap: 30px;
+    .material{
+      .material__img{
+        width: 100%;
+        height: 307px;
+        object-fit: cover;
+      }
+      .material__title{
+        background-color: #fff;
+        font-family: Oswald;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 24px;
+        text-align: center;
+        color: $black;
+      }
+    }
+  }
+  .materials__more{
+    text-align: center;
+    a{
+      text-decoration: none;
+      color:$brown;
+      font-family: Oswald;
+      font-size: 15px;
+      padding: 15px 45px;
+      border: 1px solid $brown;
+    }
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .materials{
+    .materials__grid{
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .materials{
+    .materials__grid{
+      padding: 0 30px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .materials{
+    .materials__grid{
+      padding: 0 15px;
+    }
+  }
+}

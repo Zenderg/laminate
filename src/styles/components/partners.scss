@@ -1,0 +1,60 @@
+@import "../colors";
+
+.partners{
+  margin-bottom: 80px;
+  .partners__title{
+    text-transform: uppercase;
+    color: $brown;
+    font-family: Oswald-medium;
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .partners__grid{
+    padding: 0 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-row-gap: 50px;
+    .partner{
+      display: flex;
+      transition: all .3s;
+      &:hover{
+        transform: scale(1.15);
+      }
+      img{
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .partners{
+    .partners__grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .partners{
+    .partners__grid{
+      padding: 0 15px;
+      grid-column-gap: 10px;
+      .partner{
+        img{
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1300px) {
+  .partners{
+    .partners__grid{
+      padding: 0 50px;
+    }
+  }
+}

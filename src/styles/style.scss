@@ -1,0 +1,19 @@
+@import "fonts";
+
+//COMPONENTS
+@import "./components/header";
+@import "./components/materials";
+@import "./components/projects";
+@import "./components/news";
+@import "./components/partners";
+@import "./components/footer";
+
+body{
+  overflow-x: hidden;
+  transition: transform .3s;
+}
+
+body, p {
+  margin: 0;
+  font-family: Oswald;
+}

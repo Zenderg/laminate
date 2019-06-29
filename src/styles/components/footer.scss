@@ -1,0 +1,110 @@
+@import "../colors";
+
+footer{
+  background-color: $darkBg;
+  padding: 9px 80px 18px 80px;
+  .footer__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .logo-net{
+      display: flex;
+      .footer__logo{
+        width: 140px;
+      }
+      .footer__net__link{
+        align-self: flex-end;
+        .footer__net{
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .first-link{
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+    }
+    .footer__time{
+      display: flex;
+      p{
+        color: #ffffff;
+        margin: auto;
+      }
+    }
+    .footer__contacts{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p{
+        color: #ffffff;
+      }
+      .phone_1{
+        margin-left: 50px;
+        font-size: 20px;
+      }
+      .phone_2{
+        margin-left: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  footer{
+    padding: 9px 0 18px 0 !important;
+    .footer__grid{
+      .footer__contacts{
+        flex-direction: column;
+        .phone_1, .phone_2{
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  footer{
+    .footer__grid{
+      .logo-net{
+        a:first-child{
+          margin-left: auto;
+        }
+        a:last-child{
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  footer{
+    .footer__grid{
+      grid-row-gap: 20px ;
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 960px) {
+  footer{
+    .footer__grid{
+      grid-row-gap: 20px ;
+      grid-template-columns: 250px auto 393px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  footer{
+    padding: 9px 30px 18px 30px;
+    .footer__grid{
+      .footer__contacts{
+        .phone_1, .phone_2{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
