@@ -1,0 +1,2 @@
+ALPHA: A writes a realistic sentence.
+BETA: B changes another paragraph.
