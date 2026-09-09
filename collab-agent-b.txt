@@ -1,0 +1,3 @@
+actor=B
+marker=SYNTHETIC-AGENT-B-READY
+confirmed-peer=SYNTHETIC-AGENT-A-READY
