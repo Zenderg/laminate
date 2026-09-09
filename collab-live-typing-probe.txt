@@ -1,2 +1,2 @@
-ALPHA:
+ALPHA: A writes a realistic sentence.
 BETA: B

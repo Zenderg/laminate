@@ -1,3 +1,5 @@
 actor=A
 marker=SYNTHETIC-AGENT-A-READY
 confirmed-peer=SYNTHETIC-AGENT-B-READY
+release-a17-A-ready
+release-a17-peer-confirmed=true
